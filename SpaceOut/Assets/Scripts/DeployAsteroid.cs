@@ -16,7 +16,7 @@ public class DeployAsteroid : MonoBehaviour
     private void spawnEnemy()
     {
         GameObject a = Instantiate(meteoroAPrefab) as GameObject;
-        a.transform.position = new Vector2(Random.Range (-screenBounds.x, screenBounds.x), screenBounds.y * -2 );
+        a.transform.position = new Vector2(Random.Range (-screenBounds.x, screenBounds.x), -screenBounds.y );
     }
     IEnumerator asteroidWave()
     {
